@@ -1,0 +1,301 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Nattapong Ekudomsuk}} & Email : \href{mailto:nuttapong2539@gmail.com}{nuttapong2539@gmail.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +66-83-240-8559 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\LARGE \scshape Nattapong Ekudomsuk} \\
+    %Applying to Master of Science in Computer Science, Stanford University \\ \vspace{1pt}
+    \small +66 83-240-8559 $|$ +65 8591-4636 $|$ \href{mailto:nuttapong2539@gmail.com}{\underline{nuttapong2539@gmail.com}} $|$ 
+    \href{https://github.com/nutmos}{\underline{github.com/nutmos}} $|$ 
+    \href{https://www.linkedin.com/in/nattapong-e/}{\underline{linkedin.com/in/nattapong-e}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+        \resumeSubheading
+      {Technical Account Manager}{Jun 2024 -- Present}
+      {Red Hat Asia Pacific}{Singapore}
+      \resumeItemListStart
+      \resumeItem{Specialize in OpenShift Container Platform and the container ecosystem from on-premise to cloud platform.}
+      \resumeItem{Proactive and reactive support mission-critical production systems for the well-known customers in Singapore.}
+      \resumeItem{Maintain a comprehensive knowledge of IT solutions and industry best practices and provide them to customers.}
+      \resumeItem{Deliver technical sessions regarding Day-2 operations on OpenShift Container Platform and related technologies to the big-name customers in Singapore.}
+      \resumeItem{Be technical and product advisor for OpenShift Container Platform and related products.}
+      \resumeItem{Conduct technology sharing sessions for Red Hat customers in Southeast Asia.}
+      \resumeItem{Maintain a relationship with Red Hat customers with the regular meeting to see their current adoption journey.}
+      \resumeItem{Provide technical support for critical issues and ensure the system stability to the customer.}
+      \resumeItem{Provide proactive planning for the customer for product upgrades and maintenance activities.}
+      \resumeItem{Develop modern technical solution for Day-2 operations for customers to reduce toil and save human effort.}
+      \resumeItemListEnd
+  
+      \resumeSubheading
+      {Site Reliability Engineer}{Sep 2022 -- Jun 2024}
+      {TikTok}{Singapore}
+      \resumeItemListStart
+      \resumeItem{Developed, set up and maintained SLO-based alarms for container-based services using OpenTSDB and InfluxDB metrics using monitoring as code to reduce time spending in configuration up to 60\%.}
+      \resumeItem{Created Grafana dashboards to monitor service performance and capacity using metrics from OpenTSDB, InfluxDB and Prometheus.}
+      \resumeItem{Generated SLI reports for review system health and performance indicators in weekly oncall meetings. With this report, the team could be able to focus on the noisy alarms and could be able to optimize up to 40\% of alerts in the normal situation.}
+      \resumeItem{Created an automation to generate SLI reports, which can save human effort up to 30\%.}
+      \resumeItem{Developed, improved and maintained backend services written in Golang.}
+      \resumeItem{Experienced in developing the RPC services using the Apache Thrift framework.}
+      \resumeItem{Designed, maintained and built CI/CD pipelines to automate the deployment processes, which reduce manual works up to 50\%.}
+      \resumeItem{Involved in an oncall rotation.}
+      \resumeItem{Inspected Elasticsearch queries to solve performance bottleneck.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Advanced System Engineer}{Aug 2018 -- Aug 2022}
+      {System and Platform Management Department, Kasikorn Infra, KBTG}{Nonthaburi, Thailand}
+      \resumeItemListStart
+        \resumeItem{Designed and operated logging and monitoring tools servicing critical financial systems and a 10-million-user mobile banking application by utilizing Elastic (ELK) Stack and Prometheus and visualizing on Grafana to quickly identify issues and prevent large system outages.}
+        \resumeItem{Implemented circuit breaker to automatically terminate problematic instances in financial systems to prevent large system outage using data from Elasticsearch, reducing time from 10 minutes, when done manually, to 5 minutes.}
+        \resumeItem{Designed and operated Kubernetes/OpenShift clusters for critical financial systems, from provisioning clusters, implementing observability tools (Elastic Stack, Prometheus, Grafana) and investigating application issues.}
+        \resumeItem{Onboarded application development teams to container-based environment and assist on migrate from VM-based applications to OpenShift.}
+        \resumeItem{Designed and operated Kafka clusters for receiving financial transactions.}
+        \resumeItem{Operated IBM MQ and Java application servers such as IBM WebSphere, Red Hat JBoss, Oracle WebLogic for financial and non-financial systems.}
+        \resumeItem{Reduced server provisioning time around 50\% by develop Ansible playbook to automatically install middleware software such as IBM MQ on virtual machines.}
+        \resumeItem{Operated AWS for a payment gateway system.}
+        \resumeItem{Involved in an oncall rotation.}
+        \resumeItem{Promoted from System Engineer to Advanced System Engineer in April 2022}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{Jun -- Aug 2017}
+      {Nara Institute of Science and Technology}{Nara, Japan}
+      \resumeItemListStart
+        \resumeItem{Research intern at mathematical informatics laboratory}
+        \resumeItem{Research Topic: Analyzing interaction among multivariate time series}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Engineering in Computer Engineering, 1st Class Honor}{Aug 2014 -- May 2018}
+      {Kasetsart University}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.71 of 4}
+        \resumeItem{Programming Language: Python, C\#, Java}
+        \resumeItem{Engineering Project: Private Information Retrieval. Source code available at \href{https://github.com/nutmos/pir}{\underline{github.com/nutmos/pir}}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------PROFESSIONAL CERTIFICATES-----------
+\section{Professional Certificates}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AWS Certified Solutions Architect - Associate}{May 2025}
+      {Amazon Web Services (AWS)}{}
+    \resumeSubheading
+      {Kubestronauts}{Mar 2025}
+      {The Linux Foundation}{}
+    \resumeSubheading
+      {Certified Kubernetes Security Specialists (CKS)}{Mar 2025}
+      {The Linux Foundation}{}
+    \resumeSubheading
+      {Certified Kubernetes Administrator (CKA)}{Aug 2023}
+      {The Linux Foundation}{}
+    \resumeSubheading
+      {Certified Kubernetes Application Developer (CKAD)}{Sep 2023}
+      {The Linux Foundation}{}
+    \resumeSubheading
+      {Red Hat Certified OpenShift System Administrator}{Jul 2024}
+      {Red Hat}{}
+    \resumeSubheading
+      {Red Hat Certified Engineer (RHCE)}{Dec 2024}
+      {Red Hat}{}
+  \resumeSubHeadingListEnd
+  
+%-----------CONTRIBUTIONS-----------
+\section{Contributions}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Made occasional minor contributions to the open source projects}{:} \\
+     \textbf{\href{https://github.com/grafana/grafana}{\underline{Grafana}}}{: The open-source platform for monitoring and observability} \\
+     \textbf{\href{https://github.com/prometheus-operator/prometheus-operator}{\underline{Prometheus Operator}}}{: The open-source tool provides Kubernetes native deployment and management of Prometheus and related monitoring components.}
+    }}
+ \end{itemize}
+  
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Knowledge}{: Data Structure, Algorithm} \\
+     \textbf{Operating Systems}{: Linux (CentOS, RHEL)} \\
+     \textbf{Programming Languages}{: Go, Python, JavaScript, HTML/CSS, C/C++, Rust} \\
+     \textbf{Developer Tools}{: Docker, Jenkins, Git, Vim} \\
+     \textbf{Monitoring and Logging}{: Elastic (ELK) Stack, Prometheus, Grafana} \\
+     \textbf{Scripting and Automation}{: Ansible} \\
+     \textbf{Java Application Servers}{: IBM WebSphere, Red Hat Jboss} \\
+     \textbf{Messaging Services}{: IBM MQ, Kafka} \\
+     \textbf{Containerization and Orchestration}{: Kubernetes, OpenShift, Docker} \\
+     \textbf{Cloud Platforms}{: AWS} \\
+     \textbf{Others}{: Latex}
+    }}
+ \end{itemize}
+  %-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {JASSO Scholarship for Short-term Study in Japan}{Jun 2017}
+      {Nara Institute of Science and Technology (NAIST)}{Nara, Japan}
+      \resumeItemListStart
+        \resumeItem{Awarded to intern student at NAIST with an excellent academic record from home university}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Participated in ACM-ICPC Online Contest}{Sep 2016}
+      {Mahasarakam University}{Mahasarakam, Thailand}
+    \resumeSubheading
+      {Participated in The 9th Thailand Olympiad in Informatics (TOI)}{May 2013}
+      {Thammasat University}{Bangkok, Thailand}
+
+  \resumeSubHeadingListEnd
+  
+    %-----------SCHOOL ACTIVITIES-----------
+\section{School Activities}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Board Member of KU Photo Club}{Aug 2015 - Jun 2016}
+      {Kasetsart University}{Bangkok, Thailand}
+    \resumeSubheading
+      {Board Member of Faculty of Engineering Student Union}{Aug 2016 - Jun 2017}
+      {Kasetsart University}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Main working team in volunteer for rural development camp}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------OTHER SKILLS-----------
+\section{Other Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: English, Thai (Native)} \\
+     \textbf{Hobbies}{: Photography, Writing Blogs (\href{https://blognone.com/blog/nutmos}{\underline{blognone.com/blog/nutmos}}), Practice Programming Skill at LeetCode (\href{https://leetcode.com/nutmos/}{\underline{leetcode.com/nutmos}}) or Google Code Jam}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
+cv-
